@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Create - Spotify Clone</title>
+
+    <link rel="stylesheet" href="./create.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.1.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fa-brands fa-spotify"></i>
+        </div>
+        <span>Spotify</span>
+      </div>
+
+      <!-- MAIN NAVIGATION -->
+
+      <nav class="navigation">
+        <a href="index.html">
+          <span class="nav-icon">
+            <i class="fa-solid fa-house"></i>
+          </span>
+          <span>Home</span>
+        </a>
+
+        <a href="search.html">
+          <span class="nav-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <span>Search</span>
+        </a>
+
+        <a href="library.html">
+          <span class="nav-icon">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span>Your Library</span>
+        </a>
+
+        <a href="premium.html">
+          <span class="nav-icon">
+            <i class="fa-brands fa-spotify"></i>
+          </span>
+          <span>Premium</span>
+        </a>
+
+        <a href="create.html" class="active">
+          <span class="nav-icon">
+            <i class="fa-solid fa-plus"></i>
+          </span>
+          <span>Create</span>
+        </a>
+      </nav>
+
+      <!-- ================= YOUR LIBRARY ================= -->
+
+      <div class="library-box">
+        <div class="library-heading">
+          <h3>Your Library</h3>
+          <span class="add-button">+</span>
+        </div>
+
+        <!-- LIKED SONGS -->
+
+        <a href="library.html#liked" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/like.jfif" alt="Liked Songs" />
+          </div>
+
+          <div class="library-text">
+            <b>Liked Songs</b>
+            <small>Playlist · 128 songs</small>
+          </div>
+        </a>
+
+        <!-- DAILY MIX -->
+
+        <a href="library.html#daily" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/album4.jfif" alt="Daily Mix" />
+          </div>
+
+          <div class="library-text">
+            <b>Daily Mix 1</b>
+            <small>Playlist · Spotify Clone</small>
+          </div>
+        </a>
+
+        <!-- NIGHT DRIVE -->
+
+        <a href="library.html#night" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/a3.jfif" alt="Night Drive" />
+          </div>
+
+          <div class="library-text">
+            <b>Night Drive</b>
+            <small>Playlist · You</small>
+          </div>
+        </a>
+
+        <!-- NEON HEARTS -->
+
+        <a href="library.html#neon" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/a8.jpg" alt="Neon Hearts" />
+          </div>
+
+          <div class="library-text">
+            <b>Neon Hearts</b>
+            <small>Artist</small>
+          </div>
+        </a>
+
+        <!-- MIDNIGHT SIGNAL -->
+
+        <a href="library.html#midnight" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/9.jpg" alt="Midnight Signal" />
+          </div>
+
+          <div class="library-text">
+            <b>Midnight Signal</b>
+            <small>Album · Neon Hearts</small>
+          </div>
+        </a>
+
+        <!-- LO-FI FOCUS -->
+
+        <a href="library.html#lofi" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/album2.jfif" alt="Lo-fi Focus" />
+          </div>
+
+          <div class="library-text">
+            <b>Lo-fi Focus</b>
+            <small>Playlist · You</small>
+          </div>
+        </a>
+
+        <!-- ROAD TRIP -->
+
+        <a href="library.html#roadtrip" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/vibe.jfif" alt="Road Trip" />
+          </div>
+
+          <div class="library-text">
+            <b>Road Trip</b>
+            <small>Playlist · You</small>
+          </div>
+        </a>
+      </div>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+      <!-- TOP BAR -->
+
+      <header class="top-bar">
+        <div class="navigation-arrows">
+          <button>‹</button>
+          <button>›</button>
+        </div>
+
+        <div class="account-buttons">
+          <a href="#" class="signup"> Sign up </a>
+
+          <a href="#" class="login"> Log in </a>
+        </div>
+      </header>
+
+      <!-- ================= CONTENT ================= -->
+
+      <section class="content">
+        <!-- HEADING -->
+
+        <div class="heading">
+          <small>YOUR MUSIC</small>
+
+          <h1>Create</h1>
+
+          <p>Build your own playlists and organize your music your way.</p>
+        </div>
+
+        <!-- ================= CREATE OPTIONS ================= -->
+
+        <div class="create-grid">
+          <!-- PLAYLIST -->
+
+          <div class="create-card playlist-card">
+            <div class="create-icon">+</div>
+
+            <div class="card-text">
+              <h2>Create a playlist</h2>
+
+              <p>Start a new playlist and add your favorite songs.</p>
+            </div>
+
+            <button class="create-btn">Create playlist</button>
+          </div>
+
+          <!-- FOLDER -->
+
+          <div class="create-card folder-card">
+            <div class="create-icon folder-icon">▣</div>
+
+            <div class="card-text">
+              <h2>Create a folder</h2>
+
+              <p>Organize your playlists into folders.</p>
+            </div>
+
+            <button class="create-btn dark-btn">Create folder</button>
+          </div>
+        </div>
+
+        <!-- ================= QUICK ACTIONS ================= -->
+
+        <h2 class="section-title">Quick actions</h2>
+
+        <div class="quick-actions">
+          <div class="quick-action">
+            <span class="action-icon"> ♡ </span>
+
+            <div>
+              <b>Liked Songs</b>
+              <small>Your favorite tracks</small>
+            </div>
+          </div>
+
+          <div class="quick-action">
+            <span class="action-icon"> ▶ </span>
+
+            <div>
+              <b>Recently Played</b>
+              <small>Listen again</small>
+            </div>
+          </div>
+
+          <div class="quick-action">
+            <span class="action-icon"> ★ </span>
+
+            <div>
+              <b>Discover Weekly</b>
+              <small>New music for you</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= YOUR PLAYLISTS ================= -->
+
+        <h2 class="section-title">Your playlists</h2>
+
+        <div class="playlist-grid">
+          <!-- NIGHT DRIVE -->
+
+          <div class="playlist-card-small">
+            <div class="cover">
+              <img src="./ptos/indie.jfif" alt="Night Drive" />
+            </div>
+
+            <h3>Night Drive</h3>
+
+            <p>8 songs</p>
+          </div>
+
+          <!-- DAILY MIX -->
+
+          <div class="playlist-card-small">
+            <div class="cover">
+              <img src="./ptos/album4.jfif" alt="Daily Mix 1" />
+            </div>
+
+            <h3>Daily Mix 1</h3>
+
+            <p>25 songs</p>
+          </div>
+
+          <!-- LOFI -->
+
+          <div class="playlist-card-small">
+            <div class="cover">
+              <img src="./ptos/l1.jfif" alt="Lo-fi Focus" />
+            </div>
+
+            <h3>Lo-fi Focus</h3>
+
+            <p>18 songs</p>
+          </div>
+
+          <!-- MORNING VIBES -->
+
+          <div class="playlist-card-small">
+            <div class="cover">
+              <img src="./ptos/sleep.jfif" alt="Morning Vibes" />
+            </div>
+
+            <h3>Morning Vibes</h3>
+
+            <p>15 songs</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= PLAYER ================= -->
+
+    <footer class="music-player">
+      <!-- CURRENT SONG -->
+
+      <div class="current-song">
+        <div class="player-cover">
+          <img src="./ptos/l4.jfif" alt="Midnight Signal" />
+        </div>
+
+        <div class="song-info">
+          <b> Midnight Signal </b>
+
+          <small> Neon Hearts </small>
+        </div>
+
+        <span class="heart"> ♡ </span>
+      </div>
+
+      <!-- PLAYER CONTROLS -->
+
+      <div class="player-controls">
+        <div class="control-buttons">
+          <span>⇆</span>
+
+          <span>◀</span>
+
+          <div class="play-pause">▶</div>
+
+          <span>▶</span>
+
+          <span>↻</span>
+        </div>
+
+        <div class="progress">
+          <span>0:00</span>
+
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+
+          <span>3:24</span>
+        </div>
+      </div>
+
+      <!-- VOLUME -->
+
+      <div class="volume">
+        <span> 🔊 </span>
+
+        <div class="volume-bar"></div>
+      </div>
+    </footer>
+
+    <!-- ================= MOBILE NAV ================= -->
+
+    <nav class="mobile-nav">
+      <a href="index.html">
+        <span>
+          <i class="fa-solid fa-house"></i>
+        </span>
+
+        <small> Home </small>
+      </a>
+
+      <a href="search.html">
+        <span>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+
+        <small> Search </small>
+      </a>
+
+      <a href="library.html">
+        <span>
+          <i class="fa-solid fa-bars"></i>
+        </span>
+
+        <small> Library </small>
+      </a>
+
+      <a href="premium.html">
+        <span>
+          <i class="fa-brands fa-spotify"></i>
+        </span>
+
+        <small> Premium </small>
+      </a>
+
+      <a href="create.html" class="active">
+        <span>
+          <i class="fa-solid fa-plus"></i>
+        </span>
+
+        <small> Create </small>
+      </a>
+    </nav>
+  </body>
+</html>

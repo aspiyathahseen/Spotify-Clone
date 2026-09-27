@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home - Spotify Clone</title>
+
+    <link rel="stylesheet" href="./index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.1.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- =====================================================
+       SIDEBAR
+       ===================================================== -->
+
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon"><i class="fa-brands fa-spotify"></i></div>
+        <span>Spotify</span>
+      </div>
+
+      <nav class="navigation">
+        <a href="index.html" class="active">
+          <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
+          <span>Home</span>
+        </a>
+
+        <a href="search.html">
+          <span class="nav-icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+          <span>Search</span>
+        </a>
+
+        <a href="library.html">
+          <span class="nav-icon"><i class="fa-solid fa-bars"></i></span>
+          <span>Your Library</span>
+        </a>
+
+        <a href="premium.html">
+          <span><i class="fa-brands fa-spotify"></i></span>
+          <b>Premium</b>
+        </a>
+
+        <a href="create.html">
+          <span><i class="fa-solid fa-plus"></i></span>
+          <b>Create</b>
+        </a>
+      </nav>
+
+      <!-- =====================================================
+           YOUR LIBRARY
+           ===================================================== -->
+
+      <div class="library-box">
+        <div class="library-heading">
+          <h3>Your Library</h3>
+          <span class="add-button">+</span>
+        </div>
+
+        <!-- LIKED SONGS -->
+
+        <a href="library.html#liked" class="library-item">
+          <div class="small-cover cover-purple"></div>
+
+          <div class="library-text">
+            <b>Liked Songs</b>
+            <small>Playlist · 128 songs</small>
+          </div>
+        </a>
+
+        <!-- DAILY MIX -->
+
+        <a href="library.html#daily" class="library-item">
+          <div class="small-cover cover-orange"></div>
+
+          <div class="library-text">
+            <b>Daily Mix 1</b>
+            <small>Playlist · Spotify Clone</small>
+          </div>
+        </a>
+
+        <!-- NIGHT DRIVE -->
+
+        <a href="library.html#night" class="library-item">
+          <div class="small-cover cover-blue"></div>
+
+          <div class="library-text">
+            <b>Night Drive</b>
+            <small>Playlist · You</small>
+          </div>
+        </a>
+
+        <!-- NEON HEARTS -->
+
+        <a href="library.html#neno" class="library-item">
+          <div class="small-cover cover-pink"></div>
+
+          <div class="library-text">
+            <b>Neon Hearts</b>
+            <small>Artist</small>
+          </div>
+        </a>
+
+        <!-- MIDNIGHT SIGNAL -->
+
+        <a href="library.html#midnight" class="library-item">
+          <div class="small-cover cover-purple-pink"></div>
+
+          <div class="library-text">
+            <b>Midnight Signal</b>
+            <small>Album · Neon Hearts</small>
+          </div>
+        </a>
+
+        <!-- LO-FI FOCUS -->
+
+        <a href="library.html#lofi" class="library-item">
+          <div class="small-cover cover-green"></div>
+
+          <div class="library-text">
+            <b>Lo-fi Focus</b>
+            <small>Playlist · You</small>
+          </div>
+        </a>
+
+        <!-- ROAD TRIP -->
+
+        <a href="library.html#roadtrip" class="library-item">
+          <div class="small-cover cover-magenta"></div>
+
+          <div class="library-text">
+            <b>Road Trip</b>
+            <small>Playlist · You</small>
+          </div>
+        </a>
+      </div>
+    </aside>
+
+    <!-- =====================================================
+       MAIN CONTENT
+       ===================================================== -->
+
+    <main class="main-content">
+      <!-- =====================================================
+         TOP BAR
+         ===================================================== -->
+
+      <header class="top-bar">
+        <div class="navigation-arrows">
+          <button>‹</button>
+          <button>›</button>
+        </div>
+
+        <div class="account-buttons">
+          <a href="#" class="signup"> Sign up </a>
+
+          <a href="#" class="login"> Log in </a>
+        </div>
+      </header>
+
+      <!-- =====================================================
+         ALL HOME CONTENT
+         ===================================================== -->
+
+      <div class="content">
+        <!-- FILTERS -->
+
+        <div class="filters">
+          <span class="filter-active"> All </span>
+
+          <span> Music </span>
+
+          <span> Podcasts </span>
+        </div>
+
+        <!-- =====================================================
+           GOOD EVENING
+           ===================================================== -->
+
+        <h1>Good Morning...</h1>
+
+        <!-- QUICK PLAYLISTS -->
+
+        <div class="quick-grid">
+          <div class="quick-card">
+            <div class="quick-img quick-purple"></div>
+
+            <b>Liked Songs</b>
+
+            <div class="quick-play">▶</div>
+          </div>
+
+          <div class="quick-card">
+            <div class="quick-img quick-orange"></div>
+
+            <b>Daily Mix 1</b>
+
+            <div class="quick-play">▶</div>
+          </div>
+
+          <div class="quick-card">
+            <div class="quick-img quick-blue"></div>
+
+            <b>Night Drive</b>
+
+            <div class="quick-play">▶</div>
+          </div>
+
+          <div class="quick-card">
+            <div class="quick-img quick-pink"></div>
+
+            <b>Neon Hearts</b>
+
+            <div class="quick-play">▶</div>
+          </div>
+
+          <div class="quick-card">
+            <div class="quick-img quick-green"></div>
+
+            <b>Lo-fi Focus</b>
+
+            <div class="quick-play">▶</div>
+          </div>
+
+          <div class="quick-card">
+            <div class="quick-img quick-magenta"></div>
+
+            <b>Road Trip</b>
+
+            <div class="quick-play">▶</div>
+          </div>
+        </div>
+
+        <!-- =====================================================
+           MADE FOR YOU
+           ===================================================== -->
+
+        <section class="home-section">
+          <div class="section-heading">
+            <h2>Made for you</h2>
+
+            <a href="#"> Show all </a>
+          </div>
+
+          <div class="music-grid">
+            <div class="music-card">
+              <div class="music-cover made-one">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Daily Mix 1 </b>
+
+              <small> Neon Hearts, Amber Lane and more </small>
+            </div>
+
+            <div class="music-card">
+              <div class="music-cover made-two">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Daily Mix 2 </b>
+
+              <small> Kite Runner, Nova Lights and more </small>
+            </div>
+
+            <div class="music-card">
+              <div class="music-cover made-three">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Discover Weekly </b>
+
+              <small> Fresh music picked for you </small>
+            </div>
+
+            <div class="music-card">
+              <div class="music-cover made-four">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Release Radar </b>
+
+              <small> New music from artists you follow </small>
+            </div>
+
+            <div class="music-card">
+              <div class="music-cover made-five">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Throwback Mix </b>
+
+              <small> Songs you played on repeat </small>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================
+           POPULAR ARTISTS
+           ===================================================== -->
+
+        <section class="home-section">
+          <div class="section-heading">
+            <h2>Popular artists</h2>
+
+            <a href="#"> Show all </a>
+          </div>
+
+          <div class="artist-grid">
+            <div class="artist-card">
+              <div class="artist-image artist-one">
+                <div class="artist-play">▶</div>
+              </div>
+
+              <b> Neon Hearts </b>
+
+              <small> Artist </small>
+            </div>
+
+            <div class="artist-card">
+              <div class="artist-image artist-two">
+                <div class="artist-play">▶</div>
+              </div>
+
+              <b> Amber Lane </b>
+
+              <small> Artist </small>
+            </div>
+
+            <div class="artist-card">
+              <div class="artist-image artist-three">
+                <div class="artist-play">▶</div>
+              </div>
+
+              <b> Kite Runner </b>
+
+              <small> Artist </small>
+            </div>
+
+            <div class="artist-card">
+              <div class="artist-image artist-four">
+                <div class="artist-play">▶</div>
+              </div>
+
+              <b> Midnight Echo </b>
+
+              <small> Artist </small>
+            </div>
+
+            <div class="artist-card">
+              <div class="artist-image artist-five">
+                <div class="artist-play">▶</div>
+              </div>
+
+              <b> Nova Lights </b>
+
+              <small> Artist </small>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================
+           RECENTLY PLAYED
+           ===================================================== -->
+
+        <section class="home-section">
+          <div class="section-heading">
+            <h2>Recently played</h2>
+
+            <a href="#"> Show all </a>
+          </div>
+
+          <div class="music-grid">
+            <div class="music-card">
+              <div class="music-cover recently-one">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Night Drive </b>
+
+              <small> Late night songs for your journey </small>
+            </div>
+
+            <div class="music-card">
+              <div class="music-cover recently-two">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Midnight Signal </b>
+
+              <small> Neon Hearts and more </small>
+            </div>
+
+            <div class="music-card">
+              <div class="music-cover recently-three">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Lo-fi Focus </b>
+
+              <small> Beats to help you concentrate </small>
+            </div>
+
+            <div class="music-card">
+              <div class="music-cover recently-four">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Road Trip </b>
+
+              <small> Music for your next adventure </small>
+            </div>
+
+            <div class="music-card">
+              <div class="music-cover recently-five">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Chill Vibes </b>
+
+              <small> Relax and enjoy your evening </small>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================
+           POPULAR PLAYLISTS
+           ===================================================== -->
+
+        <section class="home-section">
+          <div class="section-heading">
+            <h2>Popular playlists</h2>
+
+            <a href="#"> Show all </a>
+          </div>
+
+          <div class="music-grid">
+            <div class="music-card">
+              <div class="music-cover playlist-one">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Today's Top Hits </b>
+
+              <small> The biggest songs right now </small>
+            </div>
+
+            <div class="music-card">
+              <div class="music-cover playlist-two">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Chill Hits </b>
+
+              <small> Kick back with these smooth tracks </small>
+            </div>
+
+            <div class="music-card">
+              <div class="music-cover playlist-three">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Pop Favorites </b>
+
+              <small> Popular songs you may love </small>
+            </div>
+
+            <div class="music-card">
+              <div class="music-cover playlist-four">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Peaceful Piano </b>
+
+              <small> Relaxing piano music </small>
+            </div>
+
+            <div class="music-card">
+              <div class="music-cover playlist-five">
+                <div class="card-play">▶</div>
+              </div>
+
+              <b> Workout Energy </b>
+
+              <small> Power up your workout </small>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================
+           JUMP BACK IN
+           ===================================================== -->
+
+        <section class="home-section last-section">
+          <div class="section-heading">
+            <h2>Jump back in</h2>
+
+            <a href="#"> Show all </a>
+          </div>
+
+          <div class="quick-grid">
+            <div class="quick-card">
+              <div class="quick-img jump-one"></div>
+
+              <b> Liked Songs </b>
+
+              <div class="quick-play">▶</div>
+            </div>
+
+            <div class="quick-card">
+              <div class="quick-img jump-two"></div>
+
+              <b> Night Drive </b>
+
+              <div class="quick-play">▶</div>
+            </div>
+
+            <div class="quick-card">
+              <div class="quick-img jump-three"></div>
+
+              <b> Neon Hearts </b>
+
+              <div class="quick-play">▶</div>
+            </div>
+
+            <div class="quick-card">
+              <div class="quick-img jump-four"></div>
+
+              <b> Road Trip </b>
+
+              <div class="quick-play">▶</div>
+            </div>
+
+            <div class="quick-card">
+              <div class="quick-img jump-five"></div>
+
+              <b> Lo-fi Focus </b>
+
+              <div class="quick-play">▶</div>
+            </div>
+
+            <div class="quick-card">
+              <div class="quick-img jump-six"></div>
+
+              <b> Midnight Signal </b>
+
+              <div class="quick-play">▶</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXTRA BOTTOM SPACE
+
+        <div class="bottom-space"></div> -->
+      </div>
+    </main>
+
+    <!-- =====================================================
+       MUSIC PLAYER
+       ===================================================== -->
+
+    <footer class="music-player">
+      <!-- CURRENT SONG -->
+
+      <div class="current-song">
+        <div class="player-cover"></div>
+
+        <div class="song-info">
+          <b> Midnight Signal </b>
+
+          <small> Neon Hearts </small>
+        </div>
+
+        <span class="heart"> ♡ </span>
+      </div>
+
+      <!-- CONTROLS -->
+
+      <div class="player-controls">
+        <div class="control-buttons">
+          <span> ⇆ </span>
+
+          <span> ◀ </span>
+
+          <div class="play-pause">▶</div>
+
+          <span> ▶ </span>
+
+          <span> ↻ </span>
+        </div>
+
+        <div class="progress">
+          <span> 0:00 </span>
+
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+
+          <span> 3:24 </span>
+        </div>
+      </div>
+
+      <!-- VOLUME -->
+
+      <div class="volume">
+        <span> 🔊 </span>
+
+        <div class="volume-bar"></div>
+      </div>
+    </footer>
+
+    <nav class="mobile-nav">
+      <a href="index.html">
+        <span><i class="fa-solid fa-house"></i></span>
+        <small>Home</small>
+      </a>
+
+      <a href="search.html">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <small>Search</small>
+      </a>
+
+      <a href="library.html" class="active">
+        <span><i class="fa-solid fa-bars"></i></span>
+        <small>Library</small>
+      </a>
+
+      <a href="premium.html">
+        <span><i class="fa-brands fa-spotify"></i></span>
+        <small>Premium</small>
+      </a>
+
+      <a href="create.html">
+        <span><i class="fa-solid fa-plus"></i></span>
+        <small>Create</small>
+      </a>
+    </nav>
+  </body>
+</html>

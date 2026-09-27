@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Your Library - Spotify Clone</title>
+
+    <link rel="stylesheet" href="./library.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.1.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- =====================================================
+         MAIN APP
+         ===================================================== -->
+
+    <div class="app">
+      <!-- =====================================================
+             SIDEBAR
+             ===================================================== -->
+
+      <aside class="sidebar">
+        <div class="logo">
+          <span class="logo-circle"><i class="fa-brands fa-spotify"></i></span>
+          <span>Spotify </span>
+        </div>
+
+        <!-- MAIN NAVIGATION -->
+
+        <nav class="main-nav">
+          <a href="index.html">
+            <span><i class="fa-solid fa-house"></i></span>
+            <b>Home</b>
+          </a>
+
+          <a href="search.html">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <b>Search</b>
+          </a>
+
+          <a href="library.html" class="active">
+            <span><i class="fa-solid fa-bars"></i></span>
+            <b>Your Library</b>
+          </a>
+
+          <a href="premium.html">
+            <span><i class="fa-brands fa-spotify"></i></span>
+            <b>Premium</b>
+          </a>
+
+          <a href="create.html">
+            <span><i class="fa-solid fa-plus"></i></span>
+            <b>Create</b>
+          </a>
+        </nav>
+
+        <!-- LIBRARY SHORTCUTS -->
+
+        <div class="side-library">
+          <div class="side-title">
+            <span>Your Library</span>
+            <span class="plus">＋</span>
+          </div>
+
+          <a href="#liked" class="side-item">
+            <span class="mini-cover liked"></span>
+
+            <span>
+              <b>Liked Songs</b>
+              <small>Playlist · 7 songs</small>
+            </span>
+          </a>
+
+          <a href="#daily" class="side-item">
+            <span class="mini-cover daily"></span>
+
+            <span>
+              <b>Daily Mix 1</b>
+              <small>Playlist · 7 songs</small>
+            </span>
+          </a>
+
+          <a href="#night" class="side-item">
+            <span class="mini-cover night"></span>
+
+            <span>
+              <b>Night Drive</b>
+              <small>Playlist · 7 songs</small>
+            </span>
+          </a>
+
+          <a href="#neon" class="side-item">
+            <span class="mini-cover neon"></span>
+
+            <span>
+              <b>Neon Hearts</b>
+              <small>Artist · 7 songs</small>
+            </span>
+          </a>
+
+          <a href="#midnight" class="side-item">
+            <span class="mini-cover midnight"></span>
+
+            <span>
+              <b>Midnight Signal</b>
+              <small>Album · 7 songs</small>
+            </span>
+          </a>
+
+          <a href="#lofi" class="side-item">
+            <span class="mini-cover lofi"></span>
+
+            <span>
+              <b>Lo-fi Focus</b>
+              <small>Playlist · 7 songs</small>
+            </span>
+          </a>
+        </div>
+      </aside>
+
+      <!-- =====================================================
+             MAIN CONTENT
+             ===================================================== -->
+
+      <main class="main-content">
+        <!-- =================================================
+                 TOP BAR
+                 ================================================= -->
+
+        <header class="top-bar">
+          <div class="top-arrows">
+            <button onclick="history.back()">‹</button>
+
+            <button onclick="history.forward()">›</button>
+          </div>
+
+          <div class="account">
+            <a href="#">Sign up</a>
+
+            <a href="#" class="login">Log in</a>
+          </div>
+        </header>
+
+        <!-- =================================================
+                 LIBRARY HOME
+                 ================================================= -->
+
+        <section id="library-home" class="library-page">
+          <div class="library-heading">
+            <p>Your Library</p>
+
+            <h1>Music for every moment.</h1>
+
+            <span> Playlists, albums and artists you've saved </span>
+          </div>
+
+          <!-- FILTER BUTTONS -->
+
+          <div class="filters">
+            <a href="#library-home" class="filter active"> All </a>
+
+            <a href="#liked" class="filter"> Playlists </a>
+
+            <a href="#midnight" class="filter"> Albums </a>
+
+            <a href="#neon" class="filter"> Artists </a>
+          </div>
+
+          <!-- =================================================
+                     LIBRARY CARDS
+                     ================================================= -->
+
+          <div class="library-grid">
+            <!-- LIKED -->
+
+            <a href="#liked" class="library-card">
+              <div class="cover liked">
+                <span>♥</span>
+              </div>
+
+              <div class="card-text">
+                <h3>Liked Songs</h3>
+                <p>Playlist · 7 songs</p>
+              </div>
+            </a>
+
+            <!-- DAILY -->
+
+            <a href="#daily" class="library-card">
+              <div class="cover daily">
+                <span>♫</span>
+              </div>
+
+              <div class="card-text">
+                <h3>Daily Mix 1</h3>
+                <p>Playlist · 7 songs</p>
+              </div>
+            </a>
+
+            <!-- NIGHT -->
+
+            <a href="#night" class="library-card">
+              <div class="cover night">
+                <span>☾</span>
+              </div>
+
+              <div class="card-text">
+                <h3>Night Drive</h3>
+                <p>Playlist · 7 songs</p>
+              </div>
+            </a>
+
+            <!-- NEON -->
+
+            <a href="#neon" class="library-card">
+              <div class="cover neon">
+                <span>✦</span>
+              </div>
+
+              <div class="card-text">
+                <h3>Neon Hearts</h3>
+                <p>Artist · 7 songs</p>
+              </div>
+            </a>
+
+            <!-- MIDNIGHT -->
+
+            <a href="#midnight" class="library-card">
+              <div class="cover midnight">
+                <span>◉</span>
+              </div>
+
+              <div class="card-text">
+                <h3>Midnight Signal</h3>
+                <p>Album · 7 songs</p>
+              </div>
+            </a>
+
+            <!-- LOFI -->
+
+            <a href="#lofi" class="library-card">
+              <div class="cover lofi">
+                <span>☁</span>
+              </div>
+
+              <div class="card-text">
+                <h3>Lo-fi Focus</h3>
+                <p>Playlist · 7 songs</p>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- =====================================================
+                 LIKED SONGS VIEW
+                 ===================================================== -->
+
+        <section id="liked" class="music-view">
+          <a href="#library-home" class="back"> ‹ Back to Your Library </a>
+
+          <div class="view-hero">
+            <div class="large-cover liked">
+              <span>♥</span>
+            </div>
+
+            <div>
+              <small>PLAYLIST</small>
+
+              <h1>Liked Songs</h1>
+
+              <p>7 songs · Your favorite music</p>
+            </div>
+          </div>
+
+          <div class="song-list">
+            <div class="song-heading">
+              <span>#</span>
+              <span>Title</span>
+              <span>Album</span>
+              <span>Time</span>
+            </div>
+
+            <div class="song">
+              <span>1</span>
+              <div>
+                <b>Perfect Night</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>3:24</span>
+            </div>
+
+            <div class="song">
+              <span>2</span>
+              <div>
+                <b>Golden Hour</b>
+                <small>Amber Lane</small>
+              </div>
+              <span>Golden Hour</span>
+              <span>3:18</span>
+            </div>
+
+            <div class="song">
+              <span>3</span>
+              <div>
+                <b>City Lights</b>
+                <small>Blue Meridian</small>
+              </div>
+              <span>City Lights</span>
+              <span>3:02</span>
+            </div>
+
+            <div class="song">
+              <span>4</span>
+              <div>
+                <b>Slow Sunrise</b>
+                <small>Amber Lane</small>
+              </div>
+              <span>Golden Hour</span>
+              <span>3:33</span>
+            </div>
+
+            <div class="song">
+              <span>5</span>
+              <div>
+                <b>Paper Kites</b>
+                <small>Kite Runner</small>
+              </div>
+              <span>Paper Kites</span>
+              <span>3:41</span>
+            </div>
+
+            <div class="song">
+              <span>6</span>
+              <div>
+                <b>Echo Garden</b>
+                <small>Blue Meridian</small>
+              </div>
+              <span>City Lights</span>
+              <span>2:49</span>
+            </div>
+
+            <div class="song">
+              <span>7</span>
+              <div>
+                <b>Static Bloom</b>
+                <small>Velvet Static</small>
+              </div>
+              <span>Static Bloom</span>
+              <span>4:05</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================
+                 DAILY MIX VIEW
+                 ===================================================== -->
+
+        <section id="daily" class="music-view">
+          <a href="#library-home" class="back"> ‹ Back to Your Library </a>
+
+          <div class="view-hero">
+            <div class="large-cover daily">
+              <span>♫</span>
+            </div>
+
+            <div>
+              <small>PLAYLIST</small>
+
+              <h1>Daily Mix 1</h1>
+
+              <p>7 songs · Made for you</p>
+            </div>
+          </div>
+
+          <div class="song-list">
+            <div class="song-heading">
+              <span>#</span>
+              <span>Title</span>
+              <span>Album</span>
+              <span>Time</span>
+            </div>
+
+            <div class="song">
+              <span>1</span>
+              <div>
+                <b>Electric Dreams</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Neon Nights</span>
+              <span>3:20</span>
+            </div>
+
+            <div class="song">
+              <span>2</span>
+              <div>
+                <b>Moonlight</b>
+                <small>Blue Meridian</small>
+              </div>
+              <span>City Lights</span>
+              <span>3:12</span>
+            </div>
+
+            <div class="song">
+              <span>3</span>
+              <div>
+                <b>After Dark</b>
+                <small>Velvet Static</small>
+              </div>
+              <span>After Dark</span>
+              <span>4:02</span>
+            </div>
+
+            <div class="song">
+              <span>4</span>
+              <div>
+                <b>Dreamer</b>
+                <small>Amber Lane</small>
+              </div>
+              <span>Dream World</span>
+              <span>3:44</span>
+            </div>
+
+            <div class="song">
+              <span>5</span>
+              <div>
+                <b>Ocean Drive</b>
+                <small>Blue Meridian</small>
+              </div>
+              <span>Ocean Drive</span>
+              <span>3:36</span>
+            </div>
+
+            <div class="song">
+              <span>6</span>
+              <div>
+                <b>Neon Rain</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Neon Nights</span>
+              <span>3:28</span>
+            </div>
+
+            <div class="song">
+              <span>7</span>
+              <div>
+                <b>Last Train</b>
+                <small>Kite Runner</small>
+              </div>
+              <span>Night Drive</span>
+              <span>3:51</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================
+                 NIGHT DRIVE VIEW
+                 ===================================================== -->
+
+        <section id="night" class="music-view">
+          <a href="#library-home" class="back"> ‹ Back to Your Library </a>
+
+          <div class="view-hero">
+            <div class="large-cover night">
+              <span>☾</span>
+            </div>
+
+            <div>
+              <small>PLAYLIST</small>
+
+              <h1>Night Drive</h1>
+
+              <p>7 songs · Playlist by You</p>
+            </div>
+          </div>
+
+          <div class="song-list">
+            <div class="song-heading">
+              <span>#</span>
+              <span>Title</span>
+              <span>Album</span>
+              <span>Time</span>
+            </div>
+
+            <div class="song">
+              <span>1</span>
+              <div>
+                <b>Midnight Signal</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>3:24</span>
+            </div>
+
+            <div class="song">
+              <span>2</span>
+              <div>
+                <b>Glass Rivers</b>
+                <small>Blue Meridian</small>
+              </div>
+              <span>City Lights</span>
+              <span>3:02</span>
+            </div>
+
+            <div class="song">
+              <span>3</span>
+              <div>
+                <b>Amber Skies</b>
+                <small>Amber Lane</small>
+              </div>
+              <span>Golden Hour</span>
+              <span>2:58</span>
+            </div>
+
+            <div class="song">
+              <span>4</span>
+              <div>
+                <b>Paper Kites</b>
+                <small>Kite Runner</small>
+              </div>
+              <span>Paper Kites</span>
+              <span>3:41</span>
+            </div>
+
+            <div class="song">
+              <span>5</span>
+              <div>
+                <b>Static Bloom</b>
+                <small>Velvet Static</small>
+              </div>
+              <span>Static Bloom</span>
+              <span>4:05</span>
+            </div>
+
+            <div class="song">
+              <span>6</span>
+              <div>
+                <b>Late Bus Home</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>3:12</span>
+            </div>
+
+            <div class="song">
+              <span>7</span>
+              <div>
+                <b>Echo Garden</b>
+                <small>Blue Meridian</small>
+              </div>
+              <span>City Lights</span>
+              <span>2:49</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================
+                 NEON HEARTS VIEW
+                 ===================================================== -->
+
+        <section id="neon" class="music-view">
+          <a href="#library-home" class="back"> ‹ Back to Your Library </a>
+
+          <div class="view-hero">
+            <div class="large-cover neon">
+              <span>✦</span>
+            </div>
+
+            <div>
+              <small>ARTIST</small>
+
+              <h1>Neon Hearts</h1>
+
+              <p>Artist · 7 popular songs</p>
+            </div>
+          </div>
+
+          <div class="song-list">
+            <div class="song-heading">
+              <span>#</span>
+              <span>Title</span>
+              <span>Album</span>
+              <span>Time</span>
+            </div>
+
+            <div class="song">
+              <span>1</span>
+              <div>
+                <b>Midnight Signal</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>3:24</span>
+            </div>
+
+            <div class="song">
+              <span>2</span>
+              <div>
+                <b>Neon Rain</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Neon Nights</span>
+              <span>3:28</span>
+            </div>
+
+            <div class="song">
+              <span>3</span>
+              <div>
+                <b>Electric Dreams</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Neon Nights</span>
+              <span>3:20</span>
+            </div>
+
+            <div class="song">
+              <span>4</span>
+              <div>
+                <b>Late Bus Home</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>3:12</span>
+            </div>
+
+            <div class="song">
+              <span>5</span>
+              <div>
+                <b>City After Rain</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Neon Nights</span>
+              <span>3:45</span>
+            </div>
+
+            <div class="song">
+              <span>6</span>
+              <div>
+                <b>Last Light</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>After Dark</span>
+              <span>3:16</span>
+            </div>
+
+            <div class="song">
+              <span>7</span>
+              <div>
+                <b>Night Signal</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>4:01</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================
+                 MIDNIGHT SIGNAL VIEW
+                 ===================================================== -->
+
+        <section id="midnight" class="music-view">
+          <a href="#library-home" class="back"> ‹ Back to Your Library </a>
+
+          <div class="view-hero">
+            <div class="large-cover midnight">
+              <span>◉</span>
+            </div>
+
+            <div>
+              <small>ALBUM</small>
+
+              <h1>Midnight Signal</h1>
+
+              <p>Neon Hearts · 7 songs</p>
+            </div>
+          </div>
+
+          <div class="song-list">
+            <div class="song-heading">
+              <span>#</span>
+              <span>Title</span>
+              <span>Album</span>
+              <span>Time</span>
+            </div>
+
+            <div class="song">
+              <span>1</span>
+              <div>
+                <b>Midnight Signal</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>3:24</span>
+            </div>
+
+            <div class="song">
+              <span>2</span>
+              <div>
+                <b>Late Bus Home</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>3:12</span>
+            </div>
+
+            <div class="song">
+              <span>3</span>
+              <div>
+                <b>Street Lights</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>3:48</span>
+            </div>
+
+            <div class="song">
+              <span>4</span>
+              <div>
+                <b>Night Signal</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>4:01</span>
+            </div>
+
+            <div class="song">
+              <span>5</span>
+              <div>
+                <b>After Midnight</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>3:35</span>
+            </div>
+
+            <div class="song">
+              <span>6</span>
+              <div>
+                <b>Blue Moon</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>3:22</span>
+            </div>
+
+            <div class="song">
+              <span>7</span>
+              <div>
+                <b>Last Train</b>
+                <small>Neon Hearts</small>
+              </div>
+              <span>Midnight Signal</span>
+              <span>3:51</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- =====================================================
+                 LO-FI VIEW
+                 ===================================================== -->
+
+        <section id="lofi" class="music-view">
+          <a href="#library-home" class="back"> ‹ Back to Your Library </a>
+
+          <div class="view-hero">
+            <div class="large-cover lofi">
+              <span>☁</span>
+            </div>
+
+            <div>
+              <small>PLAYLIST</small>
+
+              <h1>Lo-fi Focus</h1>
+
+              <p>7 songs · Playlist by You</p>
+            </div>
+          </div>
+
+          <div class="song-list">
+            <div class="song-heading">
+              <span>#</span>
+              <span>Title</span>
+              <span>Album</span>
+              <span>Time</span>
+            </div>
+
+            <div class="song">
+              <span>1</span>
+              <div>
+                <b>Quiet Morning</b>
+                <small>Lo-fi Beats</small>
+              </div>
+              <span>Focus</span>
+              <span>3:24</span>
+            </div>
+
+            <div class="song">
+              <span>2</span>
+              <div>
+                <b>Soft Rain</b>
+                <small>Dream Beats</small>
+              </div>
+              <span>Rainy Days</span>
+              <span>3:42</span>
+            </div>
+
+            <div class="song">
+              <span>3</span>
+              <div>
+                <b>Warm Coffee</b>
+                <small>Lo-fi Beats</small>
+              </div>
+              <span>Focus</span>
+              <span>2:58</span>
+            </div>
+
+            <div class="song">
+              <span>4</span>
+              <div>
+                <b>Study Lights</b>
+                <small>Dream Beats</small>
+              </div>
+              <span>Late Night</span>
+              <span>3:18</span>
+            </div>
+
+            <div class="song">
+              <span>5</span>
+              <div>
+                <b>Cloud Window</b>
+                <small>Lo-fi Beats</small>
+              </div>
+              <span>Focus</span>
+              <span>3:31</span>
+            </div>
+
+            <div class="song">
+              <span>6</span>
+              <div>
+                <b>Slow Pages</b>
+                <small>Dream Beats</small>
+              </div>
+              <span>Study</span>
+              <span>3:12</span>
+            </div>
+
+            <div class="song">
+              <span>7</span>
+              <div>
+                <b>Peaceful Night</b>
+                <small>Lo-fi Beats</small>
+              </div>
+              <span>Late Night</span>
+              <span>4:05</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- =====================================================
+             MUSIC PLAYER
+             ===================================================== -->
+
+      <footer class="player">
+        <div class="now-playing">
+          <div class="player-cover night">☾</div>
+
+          <div>
+            <b>Midnight Signal</b>
+            <small>Neon Hearts</small>
+          </div>
+
+          <span class="heart">♡</span>
+        </div>
+
+        <div class="player-controls">
+          <div class="buttons">
+            <span>⇆</span>
+            <span>◀</span>
+
+            <span class="play-button"> ▶ </span>
+
+            <span>▶</span>
+            <span>↻</span>
+          </div>
+
+          <div class="progress">
+            <span>0:00</span>
+
+            <div class="progress-bar">
+              <div></div>
+            </div>
+
+            <span>3:24</span>
+          </div>
+        </div>
+
+        <div class="volume">
+          <span>🔊</span>
+
+          <div class="volume-bar">
+            <div></div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- =====================================================
+             MOBILE NAVIGATION
+             ===================================================== -->
+
+      <nav class="mobile-nav">
+        <a href="index.html">
+          <span><i class="fa-solid fa-house"></i></span>
+          <small>Home</small>
+        </a>
+
+        <a href="search.html">
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          <small>Search</small>
+        </a>
+
+        <a href="library.html" class="active">
+          <span><i class="fa-solid fa-bars"></i></span>
+          <small>Library</small>
+        </a>
+
+        <a href="premium.html">
+          <span><i class="fa-brands fa-spotify"></i></span>
+          <small>Premium</small>
+        </a>
+
+        <a href="create.html">
+          <span><i class="fa-solid fa-plus"></i></span>
+          <small>Create</small>
+        </a>
+      </nav>
+    </div>
+  </body>
+</html>

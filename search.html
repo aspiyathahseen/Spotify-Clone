@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Search - Spotify Clone</title>
+
+    <link rel="stylesheet" href="./search.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.1.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- =====================================================
+     SIDEBAR
+     ===================================================== -->
+
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fa-brands fa-spotify"></i>
+        </div>
+
+        <span>Spotify</span>
+      </div>
+
+      <nav class="navigation">
+        <a href="index.html">
+          <span class="nav-icon">
+            <i class="fa-solid fa-house"></i>
+          </span>
+          <span>Home</span>
+        </a>
+
+        <a href="search.html" class="active">
+          <span class="nav-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <span>Search</span>
+        </a>
+
+        <a href="library.html">
+          <span class="nav-icon">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span>Your Library</span>
+        </a>
+
+        <a href="premium.html">
+          <span>
+            <i class="fa-brands fa-spotify"></i>
+          </span>
+          <b>Premium</b>
+        </a>
+
+        <a href="create.html">
+          <span>
+            <i class="fa-solid fa-plus"></i>
+          </span>
+          <b>Create</b>
+        </a>
+      </nav>
+
+      <!-- LIBRARY -->
+
+      <div class="library-box">
+        <div class="library-heading">
+          <h3>Your Library</h3>
+          <span class="add-button">+</span>
+        </div>
+
+        <a href="library.html#liked" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/like.jfif" alt="" />
+          </div>
+
+          <div class="library-text">
+            <b>Liked Songs</b>
+            <small>Playlist · 128 songs</small>
+          </div>
+        </a>
+
+        <a href="library.html#daily" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/album4.jfif" alt="" />
+          </div>
+
+          <div class="library-text">
+            <b>Daily Mix 1</b>
+            <small>Playlist · Spotify Clone</small>
+          </div>
+        </a>
+
+        <a href="library.html#night" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/a3.jfif" alt="" />
+          </div>
+
+          <div class="library-text">
+            <b>Night Drive</b>
+            <small>Playlist · You</small>
+          </div>
+        </a>
+
+        <a href="library.html#neon" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/a8.jpg" alt="" />
+          </div>
+
+          <div class="library-text">
+            <b>Neon Hearts</b>
+            <small>Artist</small>
+          </div>
+        </a>
+
+        <a href="library.html#midnight" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/9.jpg" alt="" />
+          </div>
+
+          <div class="library-text">
+            <b>Midnight Signal</b>
+            <small>Album · Neon Hearts</small>
+          </div>
+        </a>
+
+        <a href="library.html#lofi" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/album2.jfif" alt="" />
+          </div>
+
+          <div class="library-text">
+            <b>Lo-fi Focus</b>
+            <small>Playlist · You</small>
+          </div>
+        </a>
+
+        <a href="library.html#roadtrip" class="library-item">
+          <div class="small-cover">
+            <img src="./ptos/vibe.jfif" alt="" />
+          </div>
+
+          <div class="library-text">
+            <b>Road Trip</b>
+            <small>Playlist · You</small>
+          </div>
+        </a>
+      </div>
+    </aside>
+
+    <!-- =====================================================
+     MAIN CONTENT
+     ===================================================== -->
+
+    <main class="main-content">
+      <!-- TOP BAR -->
+
+      <header class="top-bar">
+        <div class="navigation-arrows">
+          <button>‹</button>
+          <button>›</button>
+        </div>
+
+        <div class="account-buttons">
+          <a href="#" class="signup"> Sign up </a>
+
+          <a href="#" class="login"> Log in </a>
+        </div>
+      </header>
+
+      <!-- CONTENT -->
+
+      <section class="content">
+        <!-- SEARCH BOX -->
+
+        <div class="search-box">
+          <span class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+
+          <input type="text" placeholder="What do you want to play?" />
+        </div>
+
+        <h1>Browse all</h1>
+
+        <!-- =================================================
+             BROWSE GRID
+             ================================================= -->
+
+        <div class="browse-grid">
+          <!-- POP -->
+
+          <div class="genre genre-pop">
+            <span>Pop</span>
+
+            <img src="./ptos/a2.jfif" alt="" />
+          </div>
+
+          <!-- HIP HOP -->
+
+          <div class="genre genre-hiphop">
+            <span>Hip-Hop</span>
+
+            <img src="./ptos/a10.jpg" alt="" />
+          </div>
+
+          <!-- ROCK -->
+
+          <div class="genre genre-rock">
+            <span>Rock</span>
+
+            <img src="./ptos/a3.jfif" alt="" />
+          </div>
+
+          <!-- CHILL -->
+
+          <div class="genre genre-chill">
+            <span>Chill</span>
+
+            <img src="./ptos/a4.jfif" alt="" />
+          </div>
+
+          <!-- PODCAST -->
+
+          <div class="genre genre-podcast">
+            <span>Podcasts</span>
+
+            <img src="./ptos/a6.jfif" alt="" />
+          </div>
+
+          <!-- WORKOUT -->
+
+          <div class="genre genre-workout">
+            <span>Workout</span>
+
+            <img src="./ptos/a7.jfif" alt="" />
+          </div>
+
+          <!-- PARTY -->
+
+          <div class="genre genre-party">
+            <span>Party</span>
+
+            <img src="./ptos/a1.jpg" alt="" />
+          </div>
+
+          <!-- FOCUS -->
+
+          <div class="genre genre-focus">
+            <span>Focus</span>
+
+            <img src="./ptos/a5.jfif" alt="" />
+          </div>
+
+          <!-- JAZZ -->
+
+          <div class="genre genre-jazz">
+            <span>Jazz</span>
+
+            <img src="./ptos/a8.jpg" alt="" />
+          </div>
+
+          <!-- INDIE -->
+
+          <div class="genre genre-indie">
+            <span>Indie</span>
+
+            <img src="./ptos/indie.jfif" alt="" />
+          </div>
+
+          <!-- SLEEP -->
+
+          <div class="genre genre-sleep">
+            <span>Sleep</span>
+
+            <img src="./ptos/sleep.jfif" alt="" />
+          </div>
+
+          <!-- ROMANCE -->
+
+          <div class="genre genre-romance">
+            <span>Romance</span>
+
+            <img src="./ptos/rom.jfif" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+     MUSIC PLAYER
+     ===================================================== -->
+
+    <footer class="music-player">
+      <div class="current-song">
+        <div class="player-cover">
+          <img src="../pto/song1.jpg" alt="" />
+        </div>
+
+        <div class="song-info">
+          <b>Midnight Signal</b>
+
+          <small>Neon Hearts</small>
+        </div>
+
+        <span class="heart"> ♡ </span>
+      </div>
+
+      <div class="player-controls">
+        <div class="control-buttons">
+          <span>⇆</span>
+
+          <span>◀</span>
+
+          <div class="play-pause">▶</div>
+
+          <span>▶</span>
+
+          <span>↻</span>
+        </div>
+
+        <div class="progress">
+          <span>0:00</span>
+
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+
+          <span>3:24</span>
+        </div>
+      </div>
+
+      <div class="volume">
+        <span>🔊</span>
+
+        <div class="volume-bar"></div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+     MOBILE NAVIGATION
+     ===================================================== -->
+
+    <nav class="mobile-nav">
+      <a href="index.html">
+        <span>
+          <i class="fa-solid fa-house"></i>
+        </span>
+
+        <small>Home</small>
+      </a>
+
+      <a href="search.html" class="active">
+        <span>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+
+        <small>Search</small>
+      </a>
+
+      <a href="library.html">
+        <span>
+          <i class="fa-solid fa-bars"></i>
+        </span>
+
+        <small>Library</small>
+      </a>
+
+      <a href="premium.html">
+        <span>
+          <i class="fa-brands fa-spotify"></i>
+        </span>
+
+        <small>Premium</small>
+      </a>
+
+      <a href="create.html">
+        <span>
+          <i class="fa-solid fa-plus"></i>
+        </span>
+
+        <small>Create</small>
+      </a>
+    </nav>
+  </body>
+</html>

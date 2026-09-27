@@ -1,0 +1,1377 @@
+/* =========================================================
+  SPOTIFY CLONE
+  INDEX CSS
+  ========================================================= */
+
+/* =========================================================
+  RESET
+  ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* =========================================================
+  SIDEBAR
+  ========================================================= */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 90px;
+  width: 270px;
+  padding: 12px;
+  background: #000;
+  overflow-y: auto;
+  z-index: 50;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 7px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+/* =========================================================
+  LOGO
+  ========================================================= */
+
+.logo {
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+  padding: 0 10px;
+
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.logo-icon {
+  width: 35px;
+  height: 35px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: black;
+  color: #1ed760;
+
+  font-size: 30px;
+}
+
+/* =========================================================
+  NAVIGATION
+  ========================================================= */
+
+.navigation {
+  padding: 8px 0;
+}
+
+.navigation a {
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+  padding: 0 15px;
+
+  margin-bottom: 4px;
+
+  border-radius: 7px;
+
+  color: #b3b3b3;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  transition: 0.25s;
+}
+
+.navigation a:hover {
+  color: #fff;
+  background: #1f1f1f;
+}
+
+.navigation a.active {
+  color: #fff;
+  background: #242424;
+}
+
+.nav-icon {
+  width: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* =========================================================
+  LIBRARY
+  ========================================================= */
+
+.library-box {
+  margin-top: 8px;
+
+  padding: 14px 8px 20px;
+
+  background: #121212;
+
+  border-radius: 8px;
+}
+
+.library-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px 8px 15px;
+}
+
+.library-heading h3 {
+  color: #b3b3b3;
+
+  font-size: 13px;
+
+  text-transform: uppercase;
+}
+
+.add-button {
+  color: #b3b3b3;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+.add-button:hover {
+  color: #fff;
+}
+
+/* =========================================================
+  LIBRARY ITEMS
+  ========================================================= */
+
+.library-item {
+  min-height: 68px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 8px;
+
+  border-radius: 6px;
+
+  transition: 0.25s;
+}
+
+.library-item:hover {
+  background: #242424;
+}
+
+.small-cover {
+  width: 52px;
+  height: 52px;
+
+  flex: 0 0 52px;
+
+  border-radius: 4px;
+}
+
+/* =========================================================
+  LIBRARY COLOURS
+  ========================================================= */
+
+.cover-purple {
+  background: url("./ptos/like.jfif") center / cover no-repeat;
+}
+
+.cover-orange {
+  background: url("./ptos/album4.jfif") center / cover no-repeat;
+}
+
+.cover-blue {
+  background: url("./ptos/a3.jfif") center / cover no-repeat;
+}
+
+.cover-pink {
+  background: url("./ptos/a8.jpg") center / cover no-repeat;
+}
+
+.cover-purple-pink {
+  background: url("./ptos/9.jpg") center / cover no-repeat;
+}
+
+.cover-green {
+  background: url("./ptos/album2.jfif") center / cover no-repeat;
+}
+
+.cover-magenta {
+  background: url("./ptos/vibe.jfif") center / cover no-repeat;
+}
+
+/* =========================================================
+  LIBRARY TEXT
+  ========================================================= */
+
+.library-text {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.library-text b {
+  font-size: 14px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+.library-text small {
+  color: #a7a7a7;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+/* =========================================================
+  MAIN CONTENT
+  ========================================================= */
+
+.main-content {
+  height: 100vh;
+
+  margin-left: 270px;
+
+  padding-bottom: 90px;
+
+  background: linear-gradient(
+    180deg,
+    #252525 0px,
+    #181818 350px,
+    #121212 750px
+  );
+
+  overflow-y: auto;
+}
+
+.main-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+/* =========================================================
+  TOP BAR
+  ========================================================= */
+
+.top-bar {
+  height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 22px;
+
+  background: rgba(0, 0, 0, 0.75);
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 40;
+}
+
+.navigation-arrows {
+  display: flex;
+
+  gap: 10px;
+}
+
+.navigation-arrows button {
+  width: 38px;
+  height: 38px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #121212;
+
+  color: #fff;
+
+  font-size: 25px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.navigation-arrows button:hover {
+  background: #292929;
+}
+
+/* =========================================================
+  ACCOUNT BUTTONS
+  ========================================================= */
+
+.account-buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.account-buttons a {
+  font-weight: bold;
+}
+
+.signup {
+  color: #b3b3b3;
+}
+
+.signup:hover {
+  color: #fff;
+}
+
+.login {
+  padding: 13px 23px;
+
+  border-radius: 25px;
+
+  background: #fff;
+
+  color: #000;
+
+  transition: 0.2s;
+}
+
+.login:hover {
+  transform: scale(1.04);
+}
+
+/* =========================================================
+  CONTENT
+  ========================================================= */
+
+.content {
+  padding: 25px 32px 40px;
+}
+
+.content h1 {
+  margin: 20px 0;
+
+  font-size: 32px;
+}
+
+.content h2 {
+  font-size: 24px;
+}
+
+/* =========================================================
+  FILTERS
+  ========================================================= */
+
+.filters {
+  display: flex;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.filters span {
+  padding: 9px 17px;
+
+  border-radius: 20px;
+
+  background: #292929;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.filters span:hover {
+  background: #3a3a3a;
+}
+
+.filters .filter-active {
+  background: #fff;
+
+  color: #000;
+}
+
+/* =========================================================
+  QUICK GRID
+  ========================================================= */
+
+.quick-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 10px;
+
+  margin-bottom: 40px;
+}
+
+/* =========================================================
+  QUICK CARD
+  ========================================================= */
+
+.quick-card {
+  min-height: 72px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  position: relative;
+
+  padding: 8px;
+
+  border-radius: 7px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  overflow: hidden;
+
+  transition: 0.3s;
+
+  animation: fadeUp 0.5s ease both;
+}
+
+.quick-card:hover {
+  background: rgba(255, 255, 255, 0.18);
+
+  transform: translateY(-3px);
+}
+
+.quick-card b {
+  font-size: 14px;
+}
+
+/* =========================================================
+  QUICK IMAGES
+  ========================================================= */
+
+.quick-img {
+  width: 55px;
+  height: 55px;
+
+  flex: 0 0 55px;
+
+  border-radius: 4px;
+}
+
+.quick-purple {
+  background: url("./ptos/like.jfif") center / cover no-repeat;
+}
+
+.quick-orange {
+  background: url("./ptos/album4.jfif") center / cover no-repeat;
+}
+
+.quick-blue {
+  background: url("./ptos/a3.jfif") center / cover no-repeat;
+}
+
+.quick-pink {
+  background: url("./ptos/a8.jpg") center / cover no-repeat;
+}
+
+.quick-green {
+  background: url("./ptos/album2.jfif") center / cover no-repeat;
+}
+
+.quick-magenta {
+  background: url("./ptos/vibe.jfif") center / cover no-repeat;
+}
+
+/* =========================================================
+  QUICK PLAY
+  ========================================================= */
+
+.quick-play {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  position: absolute;
+
+  right: 12px;
+
+  background: #1ed760;
+
+  color: #000;
+
+  border-radius: 50%;
+
+  opacity: 0;
+
+  transform: translateY(8px);
+
+  transition: 0.3s;
+}
+
+.quick-card:hover .quick-play {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+/* =========================================================
+  HOME SECTION
+  ========================================================= */
+
+.home-section {
+  margin-bottom: 48px;
+}
+
+.section-heading {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  font-size: 24px;
+}
+
+.section-heading a {
+  color: #b3b3b3;
+
+  font-size: 13px;
+
+  font-weight: bold;
+}
+
+.section-heading a:hover {
+  color: #fff;
+
+  text-decoration: underline;
+}
+
+/* =========================================================
+  MUSIC GRID
+  ========================================================= */
+
+.music-grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+/* =========================================================
+  MUSIC CARD
+  ========================================================= */
+
+.music-card {
+  min-width: 0;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  background: #181818;
+
+  position: relative;
+
+  transition: 0.3s;
+
+  animation: fadeUp 0.6s ease both;
+}
+
+.music-card:hover {
+  background: #242424;
+
+  transform: translateY(-5px);
+}
+
+.music-card b {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 14px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+.music-card small {
+  display: block;
+
+  color: #a7a7a7;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+/* =========================================================
+  MUSIC COVER
+  ========================================================= */
+
+.music-cover {
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  margin-bottom: 12px;
+
+  border-radius: 6px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+.music-card:hover .music-cover {
+  transform: scale(1.02);
+}
+
+/* =========================================================
+  MADE FOR YOU
+  ========================================================= */
+
+.made-one {
+  background: url("./ptos/2.jfif") center / cover no-repeat;
+}
+
+.made-two {
+  background: url("./ptos/3.jfif") center / cover no-repeat;
+}
+
+.made-three {
+  background: url("./ptos/9.jpg") center / cover no-repeat;
+}
+
+.made-four {
+  background: url("./ptos/4.jfif") center / cover no-repeat;
+}
+
+.made-five {
+  background: url("./ptos/5.jfif") center / cover no-repeat;
+}
+
+/* =========================================================
+  RECENTLY PLAYED
+  ========================================================= */
+
+.recently-one {
+  background: url("./ptos/l1.jfif") center / cover no-repeat;
+}
+
+.recently-two {
+  background: url("./ptos/l2.jfif") center / cover no-repeat;
+}
+
+.recently-three {
+  background: url("./ptos/7.jfif") center / cover no-repeat;
+}
+
+.recently-four {
+  background: url("./ptos/l4.jfif") center / cover no-repeat;
+}
+
+.recently-five {
+  background: url("./ptos/l5.jfif") center / cover no-repeat;
+}
+
+/* =========================================================
+  POPULAR PLAYLISTS
+  ========================================================= */
+
+.playlist-one {
+  background: url("./ptos/playlist1.jfif") center / cover no-repeat;
+}
+
+.playlist-two {
+  background: url("./ptos/album3.jfif") center / cover no-repeat;
+}
+
+.playlist-three {
+  background: url("./ptos/album2.jfif") center / cover no-repeat;
+}
+
+.playlist-four {
+  background: url("./ptos/album1.jpg") center / cover no-repeat;
+}
+
+.playlist-five {
+  background: url("./ptos/album5.jfif") center / cover no-repeat;
+}
+
+/* =========================================================
+  CARD PLAY
+  ========================================================= */
+
+.card-play {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  position: absolute;
+
+  right: 10px;
+  bottom: 10px;
+
+  border-radius: 50%;
+
+  background: #1ed760;
+
+  color: #000;
+
+  opacity: 0;
+
+  transform: translateY(10px);
+
+  transition: 0.3s;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.music-card:hover .card-play {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+/* =========================================================
+  ARTIST GRID
+  ========================================================= */
+
+.artist-grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+/* =========================================================
+  ARTIST CARD
+  ========================================================= */
+
+.artist-card {
+  padding: 12px;
+
+  border-radius: 8px;
+
+  background: #181818;
+
+  transition: 0.3s;
+
+  animation: fadeUp 0.7s ease both;
+}
+
+.artist-card:hover {
+  background: #242424;
+
+  transform: translateY(-5px);
+}
+
+.artist-card b {
+  display: block;
+
+  margin-top: 12px;
+
+  margin-bottom: 6px;
+
+  font-size: 14px;
+}
+
+.artist-card small {
+  color: #a7a7a7;
+
+  font-size: 12px;
+}
+
+/* =========================================================
+  ARTIST IMAGE
+  ========================================================= */
+
+.artist-image {
+  width: 100%;
+
+  aspect-ratio: 1 / 1;
+
+  border-radius: 50%;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.artist-one {
+  background: url("./ptos/a10.jpg") center / cover no-repeat;
+}
+
+.artist-two {
+  background: url("./ptos/a2.jfif") center / cover no-repeat;
+}
+
+.artist-three {
+  background: url("./ptos/a1.jpg") center / cover no-repeat;
+}
+
+.artist-four {
+  background: url("./ptos/a5.jfif") center / cover no-repeat;
+}
+
+.artist-five {
+  background: url("./ptos/a6.jfif") center / cover no-repeat;
+}
+
+/* =========================================================
+  ARTIST PLAY
+  ========================================================= */
+
+.artist-play {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  position: absolute;
+
+  right: 10px;
+  bottom: 10px;
+
+  border-radius: 50%;
+
+  background: #1ed760;
+
+  color: #000;
+
+  opacity: 0;
+
+  transform: translateY(10px);
+
+  transition: 0.3s;
+}
+
+.artist-card:hover .artist-play {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+/* =========================================================
+  JUMP BACK IN
+  ========================================================= */
+
+.jump-one {
+  background: url("./ptos/8.jfif") center / cover no-repeat;
+}
+
+.jump-two {
+  background: url("./ptos/l3.jpg") center / cover no-repeat;
+}
+
+.jump-three {
+  background: url("./ptos/9.jpg") center / cover no-repeat;
+}
+
+.jump-four {
+  background: url("./ptos/a9.jfif") center / cover no-repeat;
+}
+
+.jump-five {
+  background: url("./ptos/a5.jfif") center / cover no-repeat;
+}
+
+.jump-six {
+  background: url("./ptos/a7.jfif") center / cover no-repeat;
+}
+
+/* =========================================================
+  BOTTOM SPACE
+  ========================================================= */
+
+.bottom-space {
+  height: 100px;
+}
+
+/* =========================================================
+  MUSIC PLAYER
+  ========================================================= */
+
+.music-player {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 90px;
+
+  display: grid;
+
+  grid-template-columns: 30% 40% 30%;
+
+  align-items: center;
+
+  padding: 10px 20px;
+
+  background: #000;
+
+  border-top: 1px solid #222;
+
+  z-index: 100;
+}
+
+/* =========================================================
+  CURRENT SONG
+  ========================================================= */
+
+.current-song {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  min-width: 0;
+}
+
+.player-cover {
+  width: 56px;
+  height: 56px;
+
+  flex: 0 0 56px;
+
+  border-radius: 4px;
+
+  background: url("./ptos/song4.jpg") center / cover no-repeat;
+}
+
+.song-info {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.current-song b {
+  font-size: 13px;
+}
+
+.current-song small {
+  color: #a7a7a7;
+
+  font-size: 11px;
+}
+
+.heart {
+  margin-left: 8px;
+
+  color: #fff;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.heart:hover {
+  color: #1ed760;
+
+  transform: scale(1.1);
+}
+
+/* =========================================================
+  PLAYER CONTROLS
+  ========================================================= */
+
+.player-controls {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.control-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  color: #b3b3b3;
+}
+
+.control-buttons span {
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.control-buttons span:hover {
+  color: #fff;
+}
+
+.play-pause {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  color: #000;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.play-pause:hover {
+  transform: scale(1.08);
+}
+
+/* =========================================================
+  PROGRESS
+  ========================================================= */
+
+.progress {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #a7a7a7;
+
+  font-size: 10px;
+}
+
+.progress-bar {
+  height: 4px;
+
+  flex: 1;
+
+  border-radius: 10px;
+
+  background: #4d4d4d;
+
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 28%;
+
+  height: 100%;
+
+  border-radius: 10px;
+
+  background: #fff;
+}
+
+/* =========================================================
+  VOLUME
+  ========================================================= */
+
+.volume {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+}
+
+.volume-bar {
+  width: 90px;
+
+  height: 4px;
+
+  border-radius: 10px;
+
+  background: #4d4d4d;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* =========================================================
+  ANIMATION
+  ========================================================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+  TABLET
+  ========================================================= */
+
+@media (max-width: 1100px) {
+  .sidebar {
+    width: 230px;
+  }
+
+  .main-content {
+    margin-left: 230px;
+  }
+
+  .music-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .artist-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .quick-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================================================
+  MOBILE
+  ========================================================= */
+
+@media (max-width: 700px) {
+  body {
+    overflow: auto;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    height: auto;
+
+    margin-left: 0;
+
+    padding-bottom: 90px;
+
+    overflow-y: visible;
+  }
+
+  .content {
+    padding: 18px;
+  }
+
+  .content h1 {
+    font-size: 26px;
+  }
+
+  .top-bar {
+    height: 60px;
+
+    position: sticky;
+
+    top: 0;
+  }
+
+  .navigation-arrows {
+    display: none;
+  }
+
+  .quick-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .music-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  .artist-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
+  .music-player {
+    height: 75px;
+
+    grid-template-columns: 1fr;
+
+    padding: 8px 15px;
+    margin-bottom: 55px;
+  }
+
+  .player-controls,
+  .volume {
+    display: none;
+  }
+
+  .current-song {
+    justify-content: center;
+  }
+
+  /* MOBILE NAV */
+
+  .mobile-nav {
+    position: fixed;
+
+    left: 0;
+    right: 0;
+
+    bottom: 0;
+
+    height: 55px;
+
+    z-index: 500;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    background: #121212;
+
+    border-top: 1px solid #292929;
+  }
+
+  .mobile-nav a {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 3px;
+
+    color: #a7a7a7;
+
+    font-size: 18px;
+  }
+
+  .mobile-nav a.active {
+    color: white;
+  }
+
+  .mobile-nav small {
+    font-size: 9px;
+  }
+}
+
+/* =========================================================
+  SMALL MOBILE
+  ========================================================= */
+
+@media (max-width: 430px) {
+  .content {
+    padding: 15px;
+  }
+
+  .music-grid,
+  .artist-grid {
+    gap: 10px;
+  }
+
+  .music-card,
+  .artist-card {
+    padding: 10px;
+  }
+
+  .account-buttons {
+    gap: 10px;
+  }
+
+  .signup {
+    display: none;
+  }
+}
