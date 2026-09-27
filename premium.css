@@ -29,26 +29,17 @@ a {
 
 .top-bar {
   height: 72px;
-
   position: fixed;
-
   top: 0;
   left: 0;
   right: 0;
-
   z-index: 1000;
-
   display: flex;
   align-items: center;
-
   justify-content: space-between;
-
   padding: 0 35px;
-
   background: rgba(0, 0, 0, 0.92);
-
   border-bottom: 1px solid #222;
-
   backdrop-filter: blur(10px);
 }
 
@@ -57,27 +48,19 @@ a {
 .logo {
   display: flex;
   align-items: center;
-
   gap: 10px;
-
   font-size: 20px;
-
   font-weight: bold;
 }
 
 .logo span {
   width: 32px;
   height: 32px;
-
   display: grid;
   place-items: center;
-
   border-radius: 50%;
-
   background: black;
-
   color: #1ed760;
-
   font-size: 30px;
 }
 
@@ -85,17 +68,13 @@ a {
 
 .top-bar nav {
   display: flex;
-
   gap: 28px;
 }
 
 .top-bar nav a {
   color: #b3b3b3;
-
   font-size: 14px;
-
   font-weight: bold;
-
   transition: 0.3s;
 }
 
@@ -111,9 +90,7 @@ a {
 
 .account {
   display: flex;
-
   align-items: center;
-
   gap: 18px;
 }
 
@@ -127,13 +104,9 @@ a {
 
 .login {
   padding: 11px 20px;
-
   background: #fff;
-
   color: #000;
-
   border-radius: 25px;
-
   transition: 0.3s;
 }
 
@@ -147,17 +120,11 @@ a {
 
 .premium-hero {
   min-height: 620px;
-
   padding: 150px 8% 80px;
-
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
   gap: 50px;
-
   background:
     radial-gradient(
       circle at 75% 50%,
@@ -165,7 +132,6 @@ a {
       transparent 35%
     ),
     linear-gradient(135deg, #121212, #062c1a, #000);
-
   overflow: hidden;
 }
 
@@ -173,29 +139,21 @@ a {
 
 .hero-content {
   max-width: 650px;
-
   animation: slideLeft 0.8s ease;
 }
 
 .small-title {
   color: #1ed760;
-
   font-size: 13px;
-
   font-weight: bold;
-
   letter-spacing: 2px;
-
   margin-bottom: 18px;
 }
 
 .hero-content h1 {
   font-size: clamp(48px, 7vw, 88px);
-
   line-height: 0.95;
-
   margin-bottom: 28px;
-
   font-weight: 900;
 }
 
@@ -205,13 +163,9 @@ a {
 
 .hero-text {
   max-width: 530px;
-
   color: #b3b3b3;
-
   font-size: 17px;
-
   line-height: 1.7;
-
   margin-bottom: 32px;
 }
 
@@ -219,44 +173,35 @@ a {
 
 .hero-buttons {
   display: flex;
-
   gap: 15px;
-
   flex-wrap: wrap;
 }
 
 .primary-btn,
 .secondary-btn {
   padding: 14px 25px;
-
   border-radius: 25px;
-
   font-weight: bold;
-
   transition: 0.3s;
 }
 
 .primary-btn {
   background: #1ed760;
-
   color: #000;
 }
 
 .primary-btn:hover {
   transform: scale(1.05);
-
   background: #1fdf64;
 }
 
 .secondary-btn {
   border: 1px solid #777;
-
   color: #fff;
 }
 
 .secondary-btn:hover {
   background: #fff;
-
   color: #000;
 }
 
@@ -267,15 +212,10 @@ a {
 .hero-circle {
   width: 330px;
   height: 330px;
-
   position: relative;
-
   display: grid;
-
   place-items: center;
-
   border-radius: 50%;
-
   background: radial-gradient(
     circle,
     #1ed760 0,
@@ -283,19 +223,15 @@ a {
     #063a22 65%,
     transparent 70%
   );
-
   animation: float 4s ease-in-out infinite;
 }
 
 .music-disc {
   width: 190px;
   height: 190px;
-
   display: grid;
   place-items: center;
-
   border-radius: 50%;
-
   background: repeating-radial-gradient(
     circle,
     #111 0,
@@ -303,13 +239,9 @@ a {
     #222 6px,
     #111 9px
   );
-
   color: #1ed760;
-
   font-size: 70px;
-
   box-shadow: 0 0 30px rgba(30, 215, 96, 0.4);
-
   animation: rotateDisc 8s linear infinite;
 }
 
@@ -317,11 +249,8 @@ a {
 
 .floating-note {
   position: absolute;
-
   color: #1ed760;
-
   font-size: 35px;
-
   animation: noteFloat 2s ease-in-out infinite alternate;
 }
 
@@ -333,14 +262,12 @@ a {
 .note-two {
   left: 15px;
   bottom: 70px;
-
   animation-delay: 0.5s;
 }
 
 .note-three {
   right: 15px;
   bottom: 30px;
-
   animation-delay: 1s;
 }
 
@@ -356,19 +283,14 @@ a {
 
 .section-title {
   text-align: center;
-
   margin-bottom: 50px;
 }
 
 .section-title p {
   color: #1ed760;
-
   font-size: 12px;
-
   font-weight: bold;
-
   letter-spacing: 2px;
-
   margin-bottom: 12px;
 }
 
@@ -390,65 +312,46 @@ a {
 
 .benefit-grid {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
   gap: 20px;
 }
 
 .benefit-card {
   min-height: 230px;
-
   padding: 28px;
-
   border-radius: 12px;
-
   background: #181818;
-
   border: 1px solid #292929;
-
   transition: 0.3s;
 }
 
 .benefit-card:hover {
   background: #222;
-
   transform: translateY(-8px);
-
   border-color: #1ed760;
 }
 
 .benefit-icon {
   width: 55px;
   height: 55px;
-
   display: grid;
   place-items: center;
-
   margin-bottom: 25px;
-
   border-radius: 50%;
-
   background: #1ed760;
-
   color: #000;
-
   font-size: 25px;
-
   font-weight: bold;
 }
 
 .benefit-card h3 {
   font-size: 18px;
-
   margin-bottom: 12px;
 }
 
 .benefit-card p {
   color: #a7a7a7;
-
   font-size: 14px;
-
   line-height: 1.6;
 }
 
@@ -462,140 +365,99 @@ a {
 
 .plan-grid {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 22px;
-
   max-width: 1100px;
-
   margin: auto;
 }
 
 .plan-card {
   position: relative;
-
   padding: 30px;
-
   border-radius: 12px;
-
   background: #181818;
-
   border: 1px solid #333;
-
   transition: 0.3s;
 }
 
 .plan-card:hover {
   transform: translateY(-10px);
-
   border-color: #1ed760;
-
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .plan-card.featured {
   border: 2px solid #1ed760;
-
   background: linear-gradient(180deg, #183c29, #181818);
 }
 
 .popular {
   position: absolute;
-
   top: -13px;
   right: 20px;
-
   padding: 6px 12px;
-
   border-radius: 20px;
-
   background: #1ed760;
-
   color: #000;
-
   font-size: 10px;
-
   font-weight: bold;
 }
 
 .plan-label {
   color: #1ed760;
-
   font-size: 11px;
-
   font-weight: bold;
-
   letter-spacing: 1px;
 }
 
 .plan-card h3 {
   font-size: 28px;
-
   margin: 12px 0;
 }
 
 .price {
   font-size: 27px;
-
   font-weight: bold;
-
   margin-bottom: 8px;
 }
 
 .price small {
   color: #a7a7a7;
-
   font-size: 12px;
-
   font-weight: normal;
 }
 
 .plan-top > p:last-child {
   color: #a7a7a7;
-
   font-size: 13px;
 }
 
 .plan-card ul {
   list-style: none;
-
   margin: 30px 0;
-
   border-top: 1px solid #333;
-
   padding-top: 20px;
 }
 
 .plan-card li {
   color: #ddd;
-
   font-size: 14px;
-
   margin-bottom: 15px;
 }
 
 .plan-btn {
   display: block;
-
   text-align: center;
-
   padding: 13px;
-
   border-radius: 25px;
-
   background: #fff;
-
   color: #000;
-
   font-weight: bold;
-
   transition: 0.3s;
 }
 
 .plan-btn:hover {
   background: #1ed760;
-
   transform: scale(1.03);
 }
 
@@ -605,31 +467,20 @@ a {
 
 .premium-banner {
   margin: 20px 7% 80px;
-
   padding: 45px;
-
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
   gap: 30px;
-
   border-radius: 15px;
-
   background: linear-gradient(110deg, #1ed760, #0c7134);
-
   color: #000;
 }
 
 .premium-banner p {
   font-size: 11px;
-
   font-weight: bold;
-
   letter-spacing: 2px;
-
   margin-bottom: 10px;
 }
 
@@ -639,17 +490,11 @@ a {
 
 .premium-banner > a {
   padding: 14px 25px;
-
   border-radius: 25px;
-
   background: #000;
-
   color: #fff;
-
   font-weight: bold;
-
   white-space: nowrap;
-
   transition: 0.3s;
 }
 
@@ -663,41 +508,31 @@ a {
 
 .faq {
   background: #090909;
-
   max-width: 1100px;
-
   margin: auto;
 }
 
 .faq-list {
   max-width: 850px;
-
   margin: auto;
 }
 
 details {
   padding: 22px 5px;
-
   border-bottom: 1px solid #333;
 }
 
 summary {
   cursor: pointer;
-
   font-size: 17px;
-
   font-weight: bold;
-
   list-style: none;
 }
 
 summary::after {
   content: "+";
-
   float: right;
-
   color: #1ed760;
-
   font-size: 22px;
 }
 
@@ -707,11 +542,8 @@ details[open] summary::after {
 
 details p {
   color: #a7a7a7;
-
   font-size: 14px;
-
   line-height: 1.6;
-
   padding-top: 15px;
 }
 
@@ -730,13 +562,11 @@ details p {
 @keyframes slideLeft {
   from {
     opacity: 0;
-
     transform: translateX(-40px);
   }
 
   to {
     opacity: 1;
-
     transform: translateX(0);
   }
 }
@@ -798,11 +628,8 @@ details p {
 
   .plan-card:last-child {
     grid-column: 1 / 3;
-
     max-width: 50%;
-
     margin: auto;
-
     width: 100%;
   }
 
@@ -845,13 +672,9 @@ details p {
 
   .premium-hero {
     min-height: 700px;
-
     padding: 110px 25px 70px;
-
     flex-direction: column;
-
     text-align: center;
-
     justify-content: center;
   }
 
@@ -879,7 +702,6 @@ details p {
   .music-disc {
     width: 135px;
     height: 135px;
-
     font-size: 50px;
   }
 
@@ -909,11 +731,8 @@ details p {
 
   .premium-banner {
     margin: 10px 18px 60px;
-
     padding: 30px 22px;
-
     flex-direction: column;
-
     align-items: flex-start;
   }
 
@@ -925,35 +744,24 @@ details p {
 
   .mobile-nav {
     position: fixed;
-
     left: 0;
     right: 0;
     bottom: 0;
-
     height: 55px;
-
     z-index: 500;
-
     display: flex;
-
     align-items: center;
     justify-content: space-around;
-
     background: #121212;
-
     border-top: 1px solid #292929;
   }
 
   .mobile-nav a {
     display: flex;
-
     flex-direction: column;
     align-items: center;
-
     gap: 3px;
-
     color: #a7a7a7;
-
     font-size: 18px;
   }
 

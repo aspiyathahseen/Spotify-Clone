@@ -34,19 +34,13 @@ button {
 
 .sidebar {
   position: fixed;
-
   left: 0;
   top: 0;
   bottom: 90px;
-
   width: 270px;
-
   padding: 12px;
-
   background: #000;
-
   overflow-y: auto;
-
   z-index: 100;
 }
 
@@ -65,14 +59,10 @@ button {
 
 .logo {
   height: 60px;
-
   display: flex;
   align-items: center;
-
   gap: 10px;
-
   padding: 0 10px;
-
   font-size: 21px;
   font-weight: 700;
 }
@@ -80,16 +70,11 @@ button {
 .logo-icon {
   width: 34px;
   height: 34px;
-
   display: grid;
   place-items: center;
-
   border-radius: 50%;
-
   background: #000;
-
   color: #1ed760;
-
   font-size: 30px;
 }
 
@@ -103,23 +88,15 @@ button {
 
 .navigation a {
   height: 54px;
-
   display: flex;
   align-items: center;
-
   gap: 15px;
-
   padding: 0 15px;
-
   margin-bottom: 4px;
-
   border-radius: 7px;
-
   color: #b3b3b3;
-
   font-size: 15px;
   font-weight: 700;
-
   transition: 0.25s;
 }
 
@@ -145,44 +122,33 @@ button {
 
 .library-box {
   margin-top: 8px;
-
   padding: 14px 8px 20px;
-
   background: #121212;
-
   border-radius: 8px;
 }
 
 .library-heading {
   display: flex;
-
   align-items: center;
   justify-content: space-between;
-
   padding: 5px 8px 15px;
 }
 
 .library-heading h3 {
   color: #b3b3b3;
-
   font-size: 13px;
-
   text-transform: uppercase;
 }
 
 .add-button {
   color: #b3b3b3;
-
   font-size: 22px;
-
   cursor: pointer;
-
   transition: 0.2s;
 }
 
 .add-button:hover {
   color: #fff;
-
   transform: rotate(90deg);
 }
 
@@ -192,24 +158,17 @@ button {
 
 .library-item {
   min-height: 68px;
-
   display: flex;
   align-items: center;
-
   gap: 12px;
-
   padding: 8px;
-
   border-radius: 6px;
-
   transition: 0.25s;
-
   cursor: pointer;
 }
 
 .library-item:hover {
   background: #242424;
-
   transform: translateX(3px);
 }
 
@@ -220,22 +179,16 @@ button {
 .small-cover {
   width: 52px;
   height: 52px;
-
   flex: 0 0 52px;
-
   border-radius: 4px;
-
   overflow: hidden;
-
   background: #292929;
 }
 
 .small-cover img {
   width: 100%;
   height: 100%;
-
   display: block;
-
   object-fit: cover;
 }
 
@@ -245,32 +198,23 @@ button {
 
 .library-text {
   min-width: 0;
-
   display: flex;
   flex-direction: column;
-
   gap: 5px;
 }
 
 .library-text b {
   font-size: 14px;
-
   white-space: nowrap;
-
   overflow: hidden;
-
   text-overflow: ellipsis;
 }
 
 .library-text small {
   color: #a7a7a7;
-
   font-size: 12px;
-
   white-space: nowrap;
-
   overflow: hidden;
-
   text-overflow: ellipsis;
 }
 
@@ -280,15 +224,11 @@ button {
 
 .main-content {
   margin-left: 270px;
-
   height: calc(100vh - 90px);
-
   padding-top: 70px;
   padding-bottom: 20px;
-
   overflow-y: auto;
   overflow-x: hidden;
-
   background: linear-gradient(180deg, #352060 0, #191229 280px, #121212 600px);
 }
 
@@ -298,7 +238,6 @@ button {
 
 .main-content::-webkit-scrollbar-thumb {
   background: #555;
-
   border-radius: 10px;
 }
 
@@ -312,26 +251,16 @@ button {
 
 .top-bar {
   position: fixed;
-
   top: 0;
-
   left: 270px;
   right: 0;
-
   height: 70px;
-
   z-index: 200;
-
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
   padding: 0 22px;
-
   background: rgba(0, 0, 0, 0.94);
-
   backdrop-filter: blur(8px);
 }
 
@@ -341,32 +270,23 @@ button {
 
 .navigation-arrows {
   display: flex;
-
   gap: 10px;
 }
 
 .navigation-arrows button {
   width: 38px;
   height: 38px;
-
   border: none;
-
   border-radius: 50%;
-
   background: #121212;
-
   color: #fff;
-
   font-size: 25px;
-
   cursor: pointer;
-
   transition: 0.2s;
 }
 
 .navigation-arrows button:hover {
   background: #292929;
-
   transform: scale(1.05);
 }
 
@@ -376,9 +296,7 @@ button {
 
 .account-buttons {
   display: flex;
-
   align-items: center;
-
   gap: 20px;
 }
 
@@ -388,7 +306,6 @@ button {
 
 .signup {
   color: #b3b3b3;
-
   transition: 0.2s;
 }
 
@@ -398,13 +315,9 @@ button {
 
 .login {
   padding: 13px 23px;
-
   border-radius: 25px;
-
   background: #fff;
-
   color: #000;
-
   transition: 0.2s;
 }
 
@@ -426,25 +339,19 @@ button {
 
 .heading small {
   color: #b3b3b3;
-
   font-size: 13px;
-
   font-weight: 700;
-
   letter-spacing: 1px;
 }
 
 .heading h1 {
   margin: 10px 0;
-
   font-size: 48px;
-
   font-weight: 900;
 }
 
 .heading p {
   color: #b3b3b3;
-
   font-size: 15px;
 }
 
@@ -454,27 +361,18 @@ button {
 
 .create-grid {
   display: grid;
-
   grid-template-columns: repeat(2, minmax(0, 1fr));
-
   gap: 20px;
-
   margin-top: 35px;
 }
 
 .create-card {
   min-height: 230px;
-
   padding: 25px;
-
   position: relative;
-
   overflow: hidden;
-
   border-radius: 10px;
-
   transition: 0.3s;
-
   animation: fadeUp 0.6s ease both;
 }
 
@@ -488,7 +386,6 @@ button {
 
 .folder-card {
   background: linear-gradient(135deg, #242424, #121212);
-
   border: 1px solid #333;
 }
 
@@ -499,23 +396,14 @@ button {
 .create-icon {
   width: 60px;
   height: 60px;
-
   display: grid;
-
   place-items: center;
-
   margin-bottom: 22px;
-
   border-radius: 50%;
-
   background: #fff;
-
   color: #000;
-
   font-size: 32px;
-
   font-weight: 300;
-
   transition: 0.3s;
 }
 
@@ -525,7 +413,6 @@ button {
 
 .folder-icon {
   font-size: 25px;
-
   background: #1ed760;
 }
 
@@ -535,17 +422,13 @@ button {
 
 .card-text h2 {
   font-size: 22px;
-
   margin-bottom: 8px;
 }
 
 .card-text p {
   color: #d0d0d0;
-
   max-width: 420px;
-
   font-size: 14px;
-
   line-height: 1.5;
 }
 
@@ -555,21 +438,13 @@ button {
 
 .create-btn {
   margin-top: 20px;
-
   padding: 11px 20px;
-
   border: none;
-
   border-radius: 22px;
-
   background: #fff;
-
   color: #000;
-
   font-weight: 700;
-
   cursor: pointer;
-
   transition: 0.2s;
 }
 
@@ -587,7 +462,6 @@ button {
 
 .section-title {
   margin: 38px 0 18px;
-
   font-size: 23px;
 }
 
@@ -597,27 +471,18 @@ button {
 
 .quick-actions {
   display: grid;
-
   grid-template-columns: repeat(3, minmax(0, 1fr));
-
   gap: 14px;
 }
 
 .quick-action {
   min-height: 80px;
-
   display: flex;
-
   align-items: center;
-
   gap: 15px;
-
   padding: 14px;
-
   border-radius: 8px;
-
   background: #181818;
-
   transition: 0.25s;
 }
 
@@ -630,31 +495,22 @@ button {
 .action-icon {
   width: 50px;
   height: 50px;
-
   display: grid;
-
   place-items: center;
-
   flex: 0 0 50px;
-
   border-radius: 6px;
-
   background: linear-gradient(135deg, #6d24c8, #1ed760);
-
   font-size: 23px;
 }
 
 .quick-action b {
   display: block;
-
   margin-bottom: 5px;
-
   font-size: 14px;
 }
 
 .quick-action small {
   color: #a7a7a7;
-
   font-size: 12px;
 }
 
@@ -664,31 +520,22 @@ button {
 
 .playlist-grid {
   display: grid;
-
   grid-template-columns: repeat(4, minmax(0, 1fr));
-
   gap: 18px;
-
   padding-bottom: 40px;
 }
 
 .playlist-card-small {
   padding: 14px;
-
   border-radius: 8px;
-
   background: #181818;
-
   transition: 0.3s;
-
   cursor: pointer;
-
   animation: fadeUp 0.6s ease both;
 }
 
 .playlist-card-small:hover {
   background: #292929;
-
   transform: translateY(-5px);
 }
 
@@ -698,34 +545,22 @@ button {
 
 .cover {
   width: 100%;
-
   aspect-ratio: 1 / 1;
-
   display: grid;
-
   place-items: center;
-
   margin-bottom: 13px;
-
   border-radius: 7px;
-
   overflow: hidden;
-
   background: #292929;
-
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-
   transition: 0.3s;
 }
 
 .cover img {
   width: 100%;
   height: 100%;
-
   display: block;
-
   object-fit: cover;
-
   transition: 0.3s;
 }
 
@@ -739,13 +574,11 @@ button {
 
 .playlist-card-small h3 {
   font-size: 14px;
-
   margin-bottom: 6px;
 }
 
 .playlist-card-small p {
   color: #a7a7a7;
-
   font-size: 12px;
 }
 
@@ -755,25 +588,16 @@ button {
 
 .music-player {
   position: fixed;
-
   left: 0;
   right: 0;
   bottom: 0;
-
   height: 90px;
-
   z-index: 300;
-
   display: grid;
-
   grid-template-columns: 30% 40% 30%;
-
   align-items: center;
-
   padding: 10px 20px;
-
   background: #000;
-
   border-top: 1px solid #222;
 }
 
@@ -783,77 +607,56 @@ button {
 
 .current-song {
   display: flex;
-
   align-items: center;
-
   gap: 12px;
-
   min-width: 0;
 }
 
 .player-cover {
   width: 56px;
   height: 56px;
-
   flex: 0 0 56px;
-
   border-radius: 4px;
-
   overflow: hidden;
-
   background: #292929;
 }
 
 .player-cover img {
   width: 100%;
   height: 100%;
-
   display: block;
-
   object-fit: cover;
 }
 
 .song-info {
   min-width: 0;
-
   display: flex;
-
   flex-direction: column;
-
   gap: 5px;
 }
 
 .song-info b {
   font-size: 13px;
-
   white-space: nowrap;
-
   overflow: hidden;
-
   text-overflow: ellipsis;
 }
 
 .song-info small {
   color: #a7a7a7;
-
   font-size: 11px;
 }
 
 .heart {
   margin-left: 8px;
-
   color: #fff;
-
   font-size: 22px;
-
   cursor: pointer;
-
   transition: 0.2s;
 }
 
 .heart:hover {
   color: #1ed760;
-
   transform: scale(1.1);
 }
 
@@ -863,52 +666,37 @@ button {
 
 .player-controls {
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   gap: 7px;
 }
 
 .control-buttons {
   display: flex;
-
   align-items: center;
-
   gap: 20px;
-
   color: #b3b3b3;
 }
 
 .control-buttons span {
   cursor: pointer;
-
   transition: 0.2s;
 }
 
 .control-buttons span:hover {
   color: #fff;
-
   transform: scale(1.1);
 }
 
 .play-pause {
   width: 38px;
   height: 38px;
-
   display: grid;
-
   place-items: center;
-
   border-radius: 50%;
-
   background: #fff;
-
   color: #000;
-
   cursor: pointer;
-
   transition: 0.2s;
 }
 
@@ -922,37 +710,25 @@ button {
 
 .progress {
   width: 100%;
-
   display: flex;
-
   align-items: center;
-
   gap: 10px;
-
   color: #a7a7a7;
-
   font-size: 10px;
 }
 
 .progress-bar {
   height: 4px;
-
   flex: 1;
-
   border-radius: 10px;
-
   background: #4d4d4d;
-
   overflow: hidden;
 }
 
 .progress-fill {
   width: 28%;
-
   height: 100%;
-
   border-radius: 10px;
-
   background: #fff;
 }
 
@@ -962,23 +738,16 @@ button {
 
 .volume {
   display: flex;
-
   align-items: center;
-
   justify-content: flex-end;
-
   gap: 10px;
-
   color: #b3b3b3;
 }
 
 .volume-bar {
   width: 90px;
-
   height: 4px;
-
   border-radius: 10px;
-
   background: #4d4d4d;
 }
 
@@ -989,13 +758,11 @@ button {
 @keyframes fadeUp {
   from {
     opacity: 0;
-
     transform: translateY(15px);
   }
 
   to {
     opacity: 1;
-
     transform: translateY(0);
   }
 }
@@ -1053,23 +820,16 @@ button {
 
   .main-content {
     margin-left: 0;
-
     height: auto;
-
     min-height: 100vh;
-
     padding-top: 60px;
-
     padding-bottom: 150px;
-
     overflow-y: visible;
   }
 
   .top-bar {
     left: 0;
-
     height: 60px;
-
     padding: 0 15px;
   }
 
@@ -1091,15 +851,12 @@ button {
 
   .create-grid {
     grid-template-columns: 1fr;
-
     gap: 15px;
-
     margin-top: 25px;
   }
 
   .create-card {
     min-height: 210px;
-
     padding: 20px;
   }
 
@@ -1109,7 +866,6 @@ button {
 
   .playlist-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-
     gap: 12px;
   }
 
@@ -1117,11 +873,8 @@ button {
 
   .music-player {
     bottom: 55px;
-
     height: 75px;
-
     grid-template-columns: 1fr;
-
     padding: 8px 15px;
   }
 
@@ -1138,37 +891,24 @@ button {
 
   .mobile-nav {
     position: fixed;
-
     left: 0;
     right: 0;
     bottom: 0;
-
     height: 55px;
-
     z-index: 500;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-around;
-
     background: #121212;
-
     border-top: 1px solid #292929;
   }
 
   .mobile-nav a {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     gap: 3px;
-
     color: #a7a7a7;
-
     font-size: 18px;
   }
 
@@ -1204,20 +944,17 @@ button {
 
   .login {
     padding: 11px 18px;
-
     font-size: 13px;
   }
 
   .create-card {
     min-height: 200px;
-
     padding: 18px;
   }
 
   .create-icon {
     width: 52px;
     height: 52px;
-
     font-size: 27px;
   }
 
