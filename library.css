@@ -50,6 +50,14 @@ a {
   overflow-y: auto;
   z-index: 100;
 }
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
 
 /* =====================================================
    LOGO
